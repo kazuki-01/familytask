@@ -4,26 +4,10 @@
 
       <div class="mein-wrapper">
         <div class="heading">
-          <h2 >新規登録</h2>
+          <h2 >ログイン</h2>
         </div>
         <div class="formbox">
           <%= form_with url: check_path ,method: :get do |form| %>
-            <div class="form">
-              <div class="form-title">
-                <%=form.label :プロフィールアイコン %><br>
-              </div>
-              <div class="file-form">
-                <%=form.file_field :プロフィールアイコン %>
-              </div>
-            </div>
-
-            <div class="form">
-              <div class="form-title">
-                <%=form.label :お名前 %><br>
-              </div>
-              <%=form.text_field :お名前 %>
-            </div>
-
             <div class="form">
               <div class="form-title">
                 <%=form.label :メールアドレス %><br>
@@ -38,14 +22,11 @@
               <%=form.password_field :パスワード %>
             </div>
 
-            <div class="form">
-              <div class="form-title">
-                <%=form.label :パスワード（確認） %><br>
-              </div>
-              <%=form.password_field :パスワード（確認） %>
-            </div>
             <div class="btn-wrapper">
-              <%= form.submit "登録する"%>   
+              <%= form.submit "ログイン"%>   
+            </div>
+            <div class="new-btn">
+              <a href="#">新規登録はこちら</a>
             </div>
           <% end %>
         </div>

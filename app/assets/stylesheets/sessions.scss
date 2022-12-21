@@ -28,19 +28,15 @@
           width: 100%;
           background-color: rgba(248, 200, 138, 0.7);
           padding-top: 20px;
-          height: 600px;
+          height: 500px;
           margin-top: 10px;
           .form {
-            margin: 25px 0 25px 20px;
+            margin: 50px 0 50px 20px;
             .form-title {
               color: black;
               label {
                 position: absolute;
               }
-            }
-            .file-form {
-              width: 100%;
-              height: 130px;
             }
             input {
               width: 91%;
@@ -58,6 +54,14 @@
               width: 93%;
               height: 50px;
               border: none;
+            }
+          }
+          .new-btn{
+            text-align: center;
+            a {
+              display: inline-block;
+              margin: 20px 0 20px 0;
+              font-size: 15px;
             }
           }
         }

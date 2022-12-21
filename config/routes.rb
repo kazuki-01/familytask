@@ -3,7 +3,9 @@ Rails.application.routes.draw do
   resources :users
   get '/check' => 'users#check'
 
-  get "/login"  => "sessions#new"
-  post 'login', to: "sessions#create"
+  get '/login' => 'sessions#new'
+  post 'login' => 'sessions#create'
+
+  get '/index' => 'posts#index'
 
 end
